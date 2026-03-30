@@ -1,0 +1,7 @@
+{
+  "name": "GlowCode: Clinical Skin & Hair Diagnostic",
+  "description": "A precision diagnostic tool for personalized skin and hair care routines using AI-driven molecular analysis.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

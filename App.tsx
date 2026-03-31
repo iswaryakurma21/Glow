@@ -48,7 +48,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { GoogleGenAI, Type, HarmCategory, HarmBlockThreshold } from "@google/genai";
 
 // Initialize Gemini
-const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "AIzaSyBiaehvFU-1pL07ZUebCWZhIc_rwqXZNBU" });
+const genAI = new GoogleGenAI(import.meta.env.VITE_GEMINI_API_KEY);
 
 const THEMES = {
   normal: { primary: 'teal', bg: 'bg-slate-950', text: 'text-teal-400', accent: 'bg-teal-500', border: 'border-teal-500/30', gradient: 'from-teal-500 to-emerald-600', neonShadow: 'neon-glow-teal' },
